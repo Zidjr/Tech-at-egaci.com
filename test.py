@@ -28,7 +28,7 @@ warnings.filterwarnings('ignore')
 plt.style.use('seaborn-v0_8')
 sns.set_palette("husl")
 
-print("Starting Data Analysis Febraury!")
+print("Starting Data Analysis January!")
 print("=" * 50)
 
 # ============================================================================
