@@ -413,3 +413,35 @@ with open('analysis_summary.txt', 'w') as f:
     f.write(f"Best Region: {best_region}\n")
 
 print("Summary saved to analysis_summary.txt")
+
+# ============================================================================
+# SECTION 10: NEW EMPLOYEE RECORDS
+# ============================================================================
+
+print("\nSECTION 10: New Employee Hires")
+
+new_employees = pd.DataFrame([
+    {
+        'employee_id': 'EMP001',
+        'name': 'Alice Johnson',
+        'role': 'Data Analyst',
+        'department': 'Analytics',
+        'start_date': '2024-04-01',
+        'salary': 75000
+    },
+    {
+        'employee_id': 'EMP002',
+        'name': 'Bob Martinez',
+        'role': 'Software Engineer',
+        'department': 'Engineering',
+        'start_date': '2024-04-01',
+        'salary': 85000
+    }
+])
+
+print("\nNew Employees Added:")
+print(new_employees.to_string(index=False))
+print(f"\nTotal new hires: {len(new_employees)}")
+
+new_employees.to_csv('employees.csv', index=False)
+print("Employee records saved to employees.csv")
